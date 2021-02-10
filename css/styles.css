@@ -35,6 +35,10 @@ header {
   width: 100%;
 }
 
+#article-title h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
 #article-title {
   display:float;
 }
@@ -63,10 +67,19 @@ main p {
   margin-bottom: 30px;
 }
 
+p {
+  text-indent: 45px;
+  font-family: 'Noto Serif', serif;
+}
+
 
 /* Labels for checked inputs */
 #ingredients input:checked + label {
   text-decoration:line-through;
+}
+
+#ingredients {
+  font-family: 'Patrick Hand', cursive;
 }
 
 ul {
