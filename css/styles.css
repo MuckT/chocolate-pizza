@@ -29,10 +29,8 @@ body, main, #sales-table {
 /* Header */
 header {
   grid-area: header;
-  background-color: black;
   height: 100px;
   color: white;
-  width: 100%;
 }
 
 #article-title h1 {
@@ -61,6 +59,7 @@ main {
 main #hero-image {
   width: 100%; 
   height: auto;
+  margin-top: 20px;
 }
 
 main p {
@@ -83,16 +82,40 @@ p {
   font-family: 'Patrick Hand', cursive;
 }
 
-ul {
-  column-count: 2;
-  column-gap: 50px;
+#ingredients ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  padding: 40px;
+  grid-gap: 10px;
+  font-size: 20px;
+}
+
+
+
+#ingredients label {
+  display: block;
+  float: left;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+#ingredients input {
+  vertical-align: middle;
+}
+
+#ingredients label span {
+  vertical-align: middle;
 }
 
 
 /* Footer */
 footer {
-  width: 100%;
   grid-area: footer;
   text-align: center;
-  background-color: black;
+}
+
+header, footer, main {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  width: 100%;
 }
