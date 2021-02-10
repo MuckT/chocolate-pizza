@@ -90,23 +90,9 @@ p {
   font-size: 20px;
 }
 
-
-
 #ingredients label {
-  display: block;
-  float: left;
-  padding-right: 10px;
-  white-space: nowrap;
+  align-items: center;
 }
-
-#ingredients input {
-  vertical-align: middle;
-}
-
-#ingredients label span {
-  vertical-align: middle;
-}
-
 
 /* Footer */
 footer {
@@ -118,4 +104,18 @@ header, footer, main {
   max-width: 960px;
   margin: 0 auto 0 auto;
   width: 100%;
+}
+
+/* Mobile Media Queries*/
+@media (max-width: 480px) {
+  main {
+    font-size: 16px;
+  }
+
+  #ingredients ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    font-size: 20px;
+  }
 }
