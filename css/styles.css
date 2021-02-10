@@ -1,3 +1,28 @@
+/* Fonts */
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+
+.news-cycle {
+  font-family: 'News Cycle', sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.patrick-hand {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.pt-serif {
+  font-family: 'PT Serif', serif;
+}
+
+.yellow-tail {
+  font-family: 'Yellowtail', cursive;
+}
+
 html {
   height: 100%;
   scroll-padding-top: 100px;
@@ -35,7 +60,14 @@ header {
 
 #article-title h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 42px;
+  margin-bottom: -8px;
+}
+
+#article-title span {
+  font-family: 'News Cycle', sans-serif;
+  font-size: .87rem;
+  color: gray;
 }
 
 #article-title {
@@ -63,13 +95,16 @@ main #hero-image {
 }
 
 main p {
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
-  text-indent: 45px;
-  font-family: 'Noto Serif', serif;
+  text-indent: 1.5rem;
+  font-family: 'PT Serif', serif;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 1.2px;
 }
 
 
@@ -80,13 +115,16 @@ p {
 
 #ingredients {
   font-family: 'Patrick Hand', cursive;
+  background-image: url("../img/list-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #ingredients ul {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  padding: 40px;
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  padding: 40px 60px;
+  grid-gap: .4rem;
   font-size: 20px;
 }
 
@@ -116,7 +154,7 @@ header, footer, main {
   #ingredients ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
-    font-size: 20px;
+    grid-gap: 18px;
+    margin-left: 35px;
   }
 }
