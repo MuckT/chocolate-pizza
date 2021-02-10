@@ -110,6 +110,7 @@ header, footer, main {
 @media (max-width: 480px) {
   main {
     font-size: 16px;
+    padding: 10px;
   }
 
   #ingredients ul {
