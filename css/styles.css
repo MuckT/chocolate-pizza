@@ -122,7 +122,7 @@ main {
   display: inline;
 }
 
-#print-page:hover {
+#print-page:hover, #social-icons img, button{
   cursor: pointer;
 }
 
