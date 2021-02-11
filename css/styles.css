@@ -55,12 +55,10 @@ body, main, #sales-table {
 header {
   grid-area: header;
   height: 100px;
-  background-color: white;
   color: black;
-  display: float;
 }
 
-header img {
+header > img {
   float: left;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -117,6 +115,10 @@ main {
 #print-page {
   float: right;
   display: inline;
+}
+
+#print-page:hover {
+  cursor: pointer;
 }
 
 main #hero-image {
