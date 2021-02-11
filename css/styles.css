@@ -249,7 +249,8 @@ header, footer, main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 18px;
-    margin-left: 35px;
+    margin-left: 25px;
+    padding-right: 10px;
   }
 
   #author-info button {
